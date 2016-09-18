@@ -32,7 +32,7 @@ class SmartIM(object):
     def init_data(self):
         self.smart_im_select_command = self.vim.eval('g:smart_im_select_command')
         self.smart_im_default_method = self.vim.eval('g:smart_im_default_method')
-        self.ismac = self.vim.eval('g:smart_im_is_mac') == '1'
+        self.ismac = self.vim.eval('g:smart_im_is_mac') == 1
         self.isinited = True
 
     def insert_leave_linux(self):
